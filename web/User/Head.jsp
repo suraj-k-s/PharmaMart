@@ -10,7 +10,8 @@
         <meta name="author" content="">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-        <title>S.S Industry Buying</title>
+        <title> Pharma mart </title>
+ 
 
         <!-- Bootstrap core CSS -->
         <link href="../Assets/Template/main/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -80,9 +81,6 @@ background: linear-gradient(0deg, rgba(167,197,233,1) 0%, rgba(167,197,233,1) 10
                             </li>
                              <li class="nav-item">
                                  <a class="nav-link" href="Complaint.jsp">Complaint</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Review.jsp">Review</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../logout.jsp">Logout</a>

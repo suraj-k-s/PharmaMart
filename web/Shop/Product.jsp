@@ -49,7 +49,7 @@
                                         </fieldset>
                                         <br>
                                     </div>
-                                            
+
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <fieldset>
                                             <select class="form-control" name="sel_brand" id="sel_brand" >
@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <fieldset>
-                                            <input  type="text" class="form-control" name="txt_rate" id="txt_rate"  placeholder="Offer Rate" required="">
+                                            <input  type="text" class="form-control" name="txt_rate" id="txt_rate"  placeholder="Rate" required="">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
@@ -96,7 +96,6 @@
                                     <th>Brand</th>
                                     <th>Category</th>
                                     <th>Rate</th>
-                                    <th>MRP</th>
                                     <th colspan="3" style="text-align: center">Action</th>
                                 </tr>
                                 <%
@@ -113,10 +112,8 @@
                                     <td><%=rsdP.getString("brand_name")%></td>
                                     <td><%=rsdP.getString("category_name")%></td>
                                     <td><%=rsdP.getString("product_rate")%></td>
-                                    <td><%=rsdP.getString("MRP")%></td>
                                     <td><a href="Product.jsp?id=<%=rsdP.getString("product_id")%>">Delete</a></td>
                                     <td><a href="Stock.jsp?id=<%=rsdP.getString("product_id")%>">Stock</a></td>
-                                    <td><a href="Offer.jsp?id=<%=rsdP.getString("product_id")%>">Offer</a></td>
                                 </tr>
                                 <%
                                     }

@@ -29,7 +29,7 @@
         <div class="row" id="result">
 
         <%
-            String selProduct = "select * from tbl_product p inner join tbl_subcategory sc on sc.subcategory_id=p.subcategory_id inner join tbl_category c on c.category_id=sc.category_id";
+            String selProduct = "select * from tbl_product p  inner join tbl_category c on c.category_id=p.category_id";
             ResultSet rsP = con.selectCommand(selProduct);
             while (rsP.next()) {
         %>
@@ -43,14 +43,11 @@
                     </div>
                     <div class="card-body">
                         <h4 class="card-title text-danger">
-                            MRP Price : <strike><%=rsP.getString("MRP")%>/-</strike>
                             Rate : <%=rsP.getString("product_rate")%>/-<br>
 
                         </h4>
-                        <h5>You saved <%= rsP.getInt("MRP") - rsP.getInt("product_rate")%></h5>
                         <p>
                             Category  : <%=rsP.getString("category_name")%><br>
-                            Subcategory  : <%=rsP.getString("subcategory_name")%><br>
                         </p>
 
 

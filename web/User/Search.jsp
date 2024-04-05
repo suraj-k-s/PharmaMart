@@ -120,11 +120,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title text-danger">
-                                            MRP Price : <strike><%=rsP.getString("MRP")%>/-</strike>
                                             Rate : <%=rsP.getString("product_rate")%>/-<br>
                                             
                                         </h4>
-                                            <h5>You saved <%= rsP.getInt("MRP")- rsP.getInt("product_rate") %></h5>
                                         <p>
                                             Category  : <%=rsP.getString("category_name")%><br>
                                             Brand  : <%=rsP.getString("brand_name")%><br>
@@ -138,7 +136,6 @@
                                                 if (stock > 0) {
                                         %>
                                         <a href="javascript:void(0)" onclick="addCart('<%=rsP.getString("product_id")%>')" class="btn btn-success btn-block">Add to Cart</a>
-                                        <a href="javascript:void(0)" onclick="buyNow('<%=rsP.getString("product_id")%>', '<%=rsP.getString("product_rate")%>')" class="btn btn-success btn-block">Buy Now</a>
                                         <%
                                         } else if (stock == 0) {
                                         %>
